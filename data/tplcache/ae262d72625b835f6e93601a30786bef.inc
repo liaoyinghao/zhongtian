@@ -1,0 +1,1 @@
+<figure class="image"><a href="[field:description/]" target="_blank" class="lightbox-image" title="[field:title/]"><img src="[field:litpic/]" alt="[field:title/]" height="70"></a></figure>

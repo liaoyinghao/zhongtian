@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="By Qian ying">
+<!-- Stylesheets -->
+<link href="/22vd/css/bootstrap.css" rel="stylesheet">
+<link href="/22vd/css/revolution-slider.css" rel="stylesheet">
+<link href="/22vd/css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="/22vd/css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="/22vd/js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="/22vd/js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    {dede:include filename="head.htm"/}
+    <!--End Main Header -->
+    
+   <!--Page Title-->
+    <section class="page-title">
+    	<div class="auto-container text-center">
+        
+        	<h4 class="small-text"><a href="http://www.shnow.cn">www.shnow.cn</a></h4>
+            <h2 class="page-name">{dede:field name='typename'/}</h2>
+            
+        </div>
+    </section>
+   
+    <section class="pricing-section bg-lightgrey">
+    	<div class="auto-container">
+        	<!--Section Title-->
+            <div class="sec-title text-center">
+            	<h3>Welcome To Qian ying</h3>
+                <h2>高级APP开发工程师招聘</h2>
+                <div class="slices"><span class="slice"></span><span class="slice"></span><span class="slice"></span></div>
+            </div>          
+        	<div class="row clearfix" >
+        		{dede:sql sql='Select title,description,litpic from dede_archives where typeid=14'}
+            	<div style=" width:1200px; height:450px;  margin:35px auto;">
+            		<div style=" width:550px; height:450px; float:left;">
+            			<img src="[field:litpic/]" style=" width:500px; height:460px; border:1px solid #CDCDCD">
+            		</div>
+            		<div style=" width:650px; height:450px; float:right;">
+            			<div style=" height:80px; line-height:80px; "><h3 style="  line-height:80px;">[field:title/]</h3></div>
+            			<div style=" height:300px; ">[field:description/]</div>
+            			
+            		</div>
+            	</div>
+            	{/dede:sql}
+            </div>
+        </div>
+    </section>
+
+    <!--Main Footer-->
+    {dede:include filename="footer.htm"/}
+    
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon flaticon-transport-2"></span></div>
+
+<script src="/22vd/js/jquery.js"></script> 
+<script src="/22vd/js/bootstrap.min.js"></script>
+<script src="/22vd/js/revolution.min.js"></script>
+<script src="/22vd/js/jquery.fancybox.pack.js"></script>
+<script src="/22vd/js/mixitup.js"></script>
+<script src="/22vd/js/bxslider.js"></script>
+<script src="/22vd/js/owl.js"></script>
+<script src="/22vd/js/wow.js"></script>
+<script src="/22vd/js/script.js"></script>
+</body>
+</html>

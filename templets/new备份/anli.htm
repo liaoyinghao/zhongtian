@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>上海千樱信息科技|建站|商城|高端APP外包定制开发|微信开发|动态云计算</title>	
+<meta charset="utf-8">
+<meta name="keywords" content="上海千樱信息 安卓软件开发 iOS外包开发 网站建设 建站 电子商城 APP外包 微商城开发 动态IP云计算 动态PPTP APP定制开发" />
+<meta name="description" content="上海千樱信息始创于2009年，专业网站建设，一条龙建站APP开发外包，提供先进动态云计算，域名注册、云服务器IDC服务" />
+<!-- Stylesheets -->
+<link href="/22vd/css/bootstrap.css" rel="stylesheet">
+<link href="/22vd/css/revolution-slider.css" rel="stylesheet">
+<link href="/22vd/css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="/22vd/css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="/22vd/js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="/22vd/js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    {dede:include filename="head.htm"/}
+    
+    <section class="page-title" style=" margin-top:50px;">
+    	<div class="auto-container text-center">   
+        	<h4 class="small-text"><a href="http://www.shnow.cn" style=" color:white;">www.shnow.cn</a></h4>
+          	 <h2 class="page-name">{dede:field name='typename'/}</h2>       
+        </div>
+    </section>
+
+    <!--Gallery Section-->
+    <section class="gallery-section fullwidth no-padd-bottom" style=" margin-bottom: 45px;">
+    	<div class="auto-container">
+            
+            <!--Section Title-->
+            <div class="sec-title text-center">
+            	<h3>Case display</h3>
+                <h2>案例展示</h2>
+                <div class="slices"><span class="slice"></span><span class="slice"></span><span class="slice"></span></div>
+            </div>
+        </div>
+        <div class="filter-list clearfix" style="  width:100%; height:auto; margin:0 auto;">
+            	{dede:sql sql='Select id,title,litpic,description from dede_archives where typeid=33 order by senddate desc'}
+		<a href="[field:description/]" target="_blank">
+		<div class="[field:typename/] default-portfolio-item" style=" width:305px; height:220px;  float:left; margin:15px 15px;">
+	                    <div class="inner-box">
+	                        <figure class="image"><img src="[field:litpic/]" alt="[field:title/]" height="220" ></figure> 
+	                        <div class="overlay-box">
+	                        	<div class="content-box">
+	                                <div class="content">
+	                                	<h2 style=" font-size:18px; color:white;">[field:title/]</h2>
+	                                </div>
+	                            </div>  
+	                            <span class="line-left"></span><span class="line-bottom"></span><span class="line-right"></span><span class="line-top"></span>
+	                        </div>
+	                    </div>
+	                </div>
+		</a>
+	{/dede:sql}
+            </div>
+        <!--    大屏    -->
+        <!--<div class="filter-list clearfix" style="  width:1520px; height:600px; margin:0 auto;">
+            	{dede:sql sql='Select id,title,litpic,description from dede_archives where typeid=33 order by senddate desc'}
+		<a href="[field:description/]" target="_blank">
+		<div class="[field:typename/] default-portfolio-item" style=" width:350px; height:260px;  float:left; margin:15px 15px;">
+	                    <div class="inner-box">
+	                        <figure class="image"><img src="[field:litpic/]" alt="[field:title/]" height="260" ></figure> 
+	                        <div class="overlay-box">
+	                        	<div class="content-box">
+	                                <div class="content">
+	                                	<h2 style=" font-size:18px; color:white;">[field:title/]</h2>
+	                                </div>
+	                            </div>  
+	                            <span class="line-left"></span><span class="line-bottom"></span><span class="line-right"></span><span class="line-top"></span>
+	                        </div>
+	                    </div>
+	                </div>
+		</a>
+	{/dede:sql}
+            </div>-->
+    </section>
+    
+    <!--Main Footer-->
+    {dede:include filename="footer.htm"/}
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon flaticon-transport-2"></span></div>
+<script src="/22vd/js/jquery.js"></script> 
+<script src="/22vd/js/bootstrap.min.js"></script>
+<script src="/22vd/js/revolution.min.js"></script>
+<script src="/22vd/js/jquery.fancybox.pack.js"></script>
+<script src="/22vd/js/mixitup.js"></script>
+<script src="/22vd/js/bxslider.js"></script>
+<script src="/22vd/js/owl.js"></script>
+<script src="/22vd/js/wow.js"></script>
+<script src="/22vd/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>中天鼎璨官网</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/style/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="/style/css/misc.css">
+	<link rel="stylesheet" href="/style/css/orange-scheme.css">
+	
+	<!-- JavaScripts -->
+	<script src="/style/js/jquery-1.10.2.min.js"></script>
+	<script src="/style/js/jquery-migrate-1.2.1.min.js"></script>
+
+	<link rel="shortcut icon" href="/style/images/favicon.ico" type="image/x-icon" />
+<style>
+	.imgs{max-width: 100%;min-width:50%;max-height:50%;min-height:50%}
+</style>
+</head>
+<body>
+<!--header * 开始 -->
+<div class="responsive_menu">
+    <ul class="main_menu">
+        <li><a href='/'><span>主页</span></a></li>
+        
+        <li><a href='/a/product/' ><span>参与活动</span></a></li>
+        
+        <li><a href='/a/download/' ><span>下载APP</span></a></li>
+        
+        <li><a href='/a/about/' ><span>关于我们</span></a></li>
+        <li class='hover'><a href='/a/contact/' ><span>联系我们</span></a></li>
+    </ul>
+</div>
+
+<header class="site-header clearfix">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="pull-left logo">
+                    <a href="index.html">
+                        <img src="/style/img/logo.png"  alt="Medigo by templatemo" class="">
+                    </a>
+                </div>	<!-- /.logo -->
+
+                <div class="main-navigation pull-right">
+
+                    <nav class="main-nav visible-md visible-lg">
+                        <ul class="sf-menu">
+                            <li><a href='/'><span>主页</span></a></li>
+                            
+                            <li><a href='/a/product/' ><span>参与活动</span></a></li>
+                            
+                            <li><a href='/a/download/' ><span>下载APP</span></a></li>
+                            
+                            <li><a href='/a/about/' ><span>关于我们</span></a></li>
+                            <li class='hover'><a href='/a/contact/' ><span>联系我们</span></a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="responsive-navigation visible-sm visible-xs">
+                        <a href="#nogo" class="menu-toggle-btn" style="margin-top: 30px;"><i class="fa fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--header * 结束 -->
+
+	
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=OXNV4vMzLxDWsKEuxUDjwnydIjxa0EQW"></script>
+		<p style="width: 100%;height: 90px;" class="zhanwei"></p>
+		<img src="/style/img/banner.jpg" style="width: 100%;"/>
+	<div class="container">	
+		<div class="row">
+
+			<div class="col-md-6 blog-posts">
+				<div class="row">
+                    <div class="col-md-10">
+						<div class="contact-form">
+							<br><h3>我们洗耳恭听，来自于您的每一个诉求</h3>
+							<div class="widget-inner">
+								<h4>公司地址：上海市崇明县长兴镇潘园公路0000号0号楼000室</h4>
+								<h4>公司电话：1231231212  45645645645</h4>
+								<h4>公司邮箱：1234567890@163.com</h4>
+								<h4>公司传真：67-345-789-063</h4>
+							</div>
+						</div>
+                    </div>
+                </div> 
+			</div> 
+
+			
+			<div class="col-md-6">
+				<div class="sidebar">
+					
+				<div style="width:100%;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+				   <script type="text/javascript">
+				    //创建和初始化地图函数：
+				    function initMap(){
+				      createMap();//创建地图
+				      setMapEvent();//设置地图事件
+				      addMapControl();//向地图添加控件
+				      addMapOverlay();//向地图添加覆盖物
+				    }
+				    function createMap(){ 
+				      map = new BMap.Map("map"); 
+				      map.centerAndZoom(new BMap.Point(121.721636,31.398792),17);
+				    }
+				    function setMapEvent(){
+				      map.enableScrollWheelZoom();
+				      map.enableKeyboard();
+				      map.enableDragging();
+				      map.enableDoubleClickZoom()
+				    }
+				    function addClickHandler(target,window){
+				      target.addEventListener("click",function(){
+				        target.openInfoWindow(window);
+				      });
+				    }
+				    function addMapOverlay(){
+				      var markers = [
+				        {content:"上海市崇明县长兴镇潘园公路1800号3号楼3348室（上海泰和经济发展区）",title:"中天鼎璨文化传播有限公司",imageOffset: {width:0,height:-21},position:{lat:31.397944,lng:121.72072}},
+				      ];
+				      for(var index = 0; index < markers.length; index++ ){
+				        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+				        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+				          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+				        })});
+				        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+				        var opts = {
+				          width: 200,
+				          title: markers[index].title,
+				          enableMessage: false
+				        };
+				        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+				        marker.setLabel(label);
+				        addClickHandler(marker,infoWindow);
+				        map.addOverlay(marker);
+				      };
+				      var labels = [
+				      ];
+				      for(var index = 0; index < labels.length; index++){
+				        var opt = { position: new BMap.Point(labels[index].position.lng,labels[index].position.lat )};
+				        var label = new BMap.Label(labels[index].content,opt);
+				        map.addOverlay(label);
+				      };
+				    }
+				    //向地图添加控件
+				    function addMapControl(){
+				      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+				      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+				      map.addControl(scaleControl);
+				      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+				      map.addControl(navControl);
+				      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+				      map.addControl(overviewControl);
+				    }
+				    var map;
+				      initMap();
+				  </script>
+				</div> <!-- /.sidebar -->
+			</div> <!-- /.col-md-4 -->
+		</div> <!-- /.row -->
+	</div> <!-- /.container -->
+
+
+<!-- -footer 开始-->
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="footer-nav clearfix">
+                    <ul class="footer-menu">
+                        <li><a href='/'><span>首页</span></a></li>
+                        
+                        <li><a href='/a/product/' ><span>参与活动</span></a></li>
+                        
+                        <li><a href='/a/download/' ><span>下载APP</span></a></li>
+                        
+                        <li><a href='/a/about/' ><span>关于我们</span></a></li>
+                        <li class='hover'><a href='/a/contact/' ><span>联系我们</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright-text">
+                    COPYRIGHT © SHANGHAI JINYUANBAO TECHNOLOGY CO,LTD.     中天鼎璨科技有限公司
+                </p>
+                <p class="copyright-text">
+                    沪ICP备 00000000号    联系电话：400-000-8888
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- -footer 结束-->
+
+	<!-- Scripts -->
+	<script src="/style/js/min/plugins.min.js"></script>
+	<script src="/style/js/min/medigo-custom.min.js"></script>
+	<script src="/style/js/jquery.validate.min.js"></script>
+	<script src="/style/js/jquery.form.js"></script>
+	<script src="/style/js/jquery.md5.js"></script>
+</body>
+</html>
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#commentform").validate({
+            submitHandler: function () {
+                var data = $("#commentform").formToArray();
+                $.ajax({
+                    type: "POST",
+                    url: "{:url('index/save')}",
+                    data: data,
+                    dataType: 'json',
+                    success: function (msg) {
+                        if (msg.status == "true") {
+                           	alert(msg.message);
+                            location.reload();
+                        } else {
+                           alert(msg.message);
+                        }
+                    }
+                });
+            }
+		});
+	});
+</script>
+
+

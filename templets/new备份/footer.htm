@@ -1,0 +1,79 @@
+﻿<footer class="main-footer">
+    	
+        <!--Footer Upper-->        
+        <div class="footer-upper">
+            <div class="auto-container">
+                <div class="row clearfix">
+                
+                	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
+                        <div class="footer-widget about-widget">
+                            <h2>关于我们</h2>
+                            <div class="text">
+                            	<p>我们致力于成为立足上海，辐射全国的移动互联网开发和云计算技术公司。千樱信息始终秉承“专业 · 可靠 · 贴心”的服务理念，不断完善项目管控模式、专注互联网新技术研发和实践，为客户提供优质“互联网+”解决方案和一站式服务。</p>
+                            </div>
+                            
+                            <div class="social-links">
+                            	<a href="https://wpa.qq.com/msgrd?V=1&uin=286651699&Site=www.atmancul.com&Menu=yes"><span class="fa fa-qq"></span></a>
+                              
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Footer Column-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
+                        <div class="footer-widget latest-news">
+                        	<h2>扫码关注</h2>
+                          <img src="/22vd/images/fs.jpg" width="143" height="143">
+                        </div>
+                    </div>
+                    
+                    <!--Footer Column-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column padd-left-60">
+                    	<div class="footer-widget links-widget">
+                        <h2>网站导航</h2>
+                            <ul>
+                                <li><a href="/">网站首页</a>  
+                                </li>
+                                <li><a href="/a/dingzhifuwubaojia/">定制服务报价</a>  
+                                </li>
+                                <li><a href="/a/anlizhanshi/">案例展示</a>  
+                                </li>
+                                <li><a href="/a/guanyuwomen/">关于我们</a>  
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    
+                    <!--Footer Column-->
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 column">
+                    	<div class="footer-widget gallery-widget">
+                            <h2>最新产品</h2>	
+                            <div class="clearfix">
+                            {dede:sql sql='Select id,title,litpic,description from dede_archives where typeid=14 order by senddate desc limit 0,6'}          
+                            	<figure class="image"><a href="[field:description/]" target="_blank" class="lightbox-image" title="[field:title/]"><img src="[field:litpic/]" alt="[field:title/]" height="70"></a></figure>    
+                            {/dede:sql}           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4318e7575a61ebe56fd17a07c04b8505";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+        
+        
+        
+        
+
+    </footer>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="By Maker Cloud">
+<!-- Stylesheets -->
+<link href="/22vd/css/bootstrap.css" rel="stylesheet">
+<link href="/22vd/css/revolution-slider.css" rel="stylesheet">
+<link href="/22vd/css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/22vd/images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="/22vd/css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="/22vd/js/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="/22vd/js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    {dede:include filename="head.htm"/}
+    <!--End Main Header -->
+    
+   <!--Page Title-->
+    <section class="page-title">
+    	<div class="auto-container text-center">
+        
+        	<h4 class="small-text">www.22vd.com</h4>
+            <h2 class="page-name">{dede:field name='typename'/}</h2>
+            
+            <!--Bread Crumb-->
+            <ul class="bread-crumb clearfix">
+                {dede:field name='position'/}
+            </ul>
+            
+        </div>
+    </section>
+    
+    <section class="gallery-section">
+    
+    	<div class="auto-container">  
+        	<div class="mixitup-gallery">
+            
+             
+                
+            
+                <div class="filter-list clearfix" id="MixItUp1B526F">
+                    {dede:list pagesize='9' titlelen='50' infolen='100'}
+                   
+                    <div class="default-portfolio-item mix mix_all illustration business portfolio col-md-4 col-sm-6 col-xs-12" style="display: inline-block;">
+                        <div class="inner-box">
+                            <figure class="image"><img src="[field:picname/]" alt="[field:fulltitle/]" height="240"></figure>
+                            <!--Overlay-->
+                            <div class="overlay-box">
+                                <div class="content-box">
+                                    <div class="content">
+                                        <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                                        <div class="tags" style="color:#efefef; padding:0px 14px">[field:infos/]</div>
+                                        <a title="[field:fulltitle/]" class="zoom-btn lightbox-image" href="[field:picname/]"><span class="icon flaticon-cross"></span></a>
+                                    </div>
+                                </div>
+                                
+                                <!--Lines -->
+                                <span class="line-left"></span><span class="line-bottom"></span><span class="line-right"></span><span class="line-top"></span>
+                            </div>
+                        </div>
+                    </div>
+                    {/dede:list} 
+                    
+                    
+                </div>
+                
+            </div>
+        
+        	  <!-- Styled Pagination -->
+            <div class="styled-pagination text-center padd-top-20 padd-bott-20">
+                <div class="dede_pages">
+			<ul class="pagelist">
+				 {dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+			</ul>
+		</div><!-- /pages -->
+            </div>
+            
+        </div>
+        
+    </section>
+   
+    <!--Main Footer-->
+    {dede:include filename="footer.htm"/}
+    
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon flaticon-transport-2"></span></div>
+
+<script src="/22vd/js/jquery.js"></script> 
+<script src="/22vd/js/bootstrap.min.js"></script>
+<script src="/22vd/js/revolution.min.js"></script>
+<script src="/22vd/js/jquery.fancybox.pack.js"></script>
+<script src="/22vd/js/mixitup.js"></script>
+<script src="/22vd/js/bxslider.js"></script>
+<script src="/22vd/js/owl.js"></script>
+<script src="/22vd/js/wow.js"></script>
+<script src="/22vd/js/script.js"></script>
+</body>
+</html>

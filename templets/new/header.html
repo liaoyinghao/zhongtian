@@ -1,0 +1,42 @@
+<div class="responsive_menu">
+    <ul class="main_menu">
+        <li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
+        {dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+        <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+        {/dede:channel}
+    </ul>
+</div>
+
+<header class="site-header clearfix">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="pull-left logo">
+                    <a href="index.html">
+                        <img src="/style/img/logo.png"  alt="Medigo by templatemo" class="">
+                    </a>
+                </div>	<!-- /.logo -->
+
+                <div class="main-navigation pull-right">
+
+                    <nav class="main-nav visible-md visible-lg">
+                        <ul class="sf-menu">
+                            <li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
+                            {dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+                            <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+                            {/dede:channel}
+                        </ul>
+                    </nav>
+
+
+                    <div class="responsive-navigation visible-sm visible-xs">
+                        <a href="#nogo" class="menu-toggle-btn" style="margin-top: 30px;"><i class="fa fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

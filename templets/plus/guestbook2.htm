@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><?php echo $cfg_webname; ?> - 留言本</title>
+<link href="<?php echo $cfg_templeturl; ?>/default/style/dedecms.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/style/css/misc.css">
+    <link rel="stylesheet" href="/style/css/orange-scheme.css">
+<style>
+	.lefttd {
+		border-left:1px solid #dedede;
+		border-right:1px solid #dedede;
+	}
+	.ltd {
+		border-left:1px solid #dedede;
+		border-right:1px solid #dedede;
+		border-top:1px solid #dedede;
+		border-bottom:1px dashed #dedede;
+	}
+	.msgtd {
+		line-height:180%;
+		border-right:1px solid #dedede;
+		padding:5px;
+		height:80px;
+	}
+	.timetd {
+		border-right:1px solid #dedede;
+		border-top:1px solid #dedede;
+		border-bottom:1px dashed #dedede;
+		padding-left:5px;
+	}
+	.bottomtd {
+		border-right:1px solid #dedede;
+		border-top:1px dashed #dedede;
+		padding-left:5px;
+	}
+	.writetable td {
+		padding: 5px;
+	}
+	.writetd {
+		background:url(img/wbg.gif);
+	}
+	.pagetable {
+		border:1px solid #dedede;
+		margin-bottom:8px;
+		background:#FBFEED;
+	}
+ .pagelistbox {
+
+ }
+ .pagelistbox span{
+ 	  border:1px solid #dedede;
+ 	  padding:2px;
+ 	  margin-right:3px;
+ 	  background:#E8F9BF;
+ }
+ .pagelistbox a {
+ 	  border:1px solid #dedede;
+ 	  padding:2px;
+ 	  margin-right:3px;
+ 	  background:#E8F9BF;
+ 	  padding-left:5px;
+ 	  padding-right:5px;
+ }
+ .rebox {
+   width:98%;
+   padding:3px;
+   border:1px solid #dedede;
+ }
+</style>
+</head>
+<body class="mapspage">
+<div class="header">
+<!--<div class="top w960 center">-->
+		<!--<div class="title">-->
+			<!--<h1>-->
+				<!--<h1><a href="<?php echo $cfg_basehost;?>/"><?php echo $cfg_webname;?></a></h1>-->
+			<!--</h1>-->
+		<!--</div>&lt;!&ndash; /title &ndash;&gt;-->
+	<!--</div>&lt;!&ndash; /top &ndash;&gt;-->
+<!--</div>&lt;!&ndash; /header &ndash;&gt;-->
+<p style="width: 100%;height: 90px;" class="zhanwei"></p>
+<div class="w960 clear center mt1">
+    {dede:datalist}
+    <table width='100%' border='0' align="center" cellpadding='0' cellspacing='0' style="<?php echo (($ntt==0) ? "background:{$bgcc}" : 'background:#ffffff'); ?>">
+    <tr>
+        <td width='160' align="center" class='ltd'>
+            <b><?php echo $fields['uname']; ?></b>
+        </td>
+        <td height="26" class='timetd'>
+            <img height='16' src='guestbook/images/time.gif' width='16' /> 时间: <?php echo MyDate('m-d H:i',$fields['dtime']); ?>
+            &nbsp;
+            主题：<?php echo $fields['title']; ?>
+        </td>
+    </tr>
+    <tr>
+        <td width='160' rowspan='2' align="center" class='lefttd'>
+            <table width='160' border='0' align="center" cellpadding='1' cellspacing='2'>
+                <tr>
+                    <td height="80" align="center">
+                        <img src='guestbook/images/<?php echo $fields['face']?>.gif' border=0 /> <?php echo GetIsCheck($fields['ischeck'],$fields['id'])?>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="20">&nbsp;来自：<?php echo preg_replace("#[^\.]*\.[^\.]*$#","*.*",$fields['ip']); ?></td>
+                </tr>
+                <tr>
+                    <td height="20">&nbsp;QQ：<?php echo $fields['qq']?></td>
+                </tr>
+            </table>
+        </td>
+        <td class='msgtd'><?php echo $fields['msg']; ?></td>
+    </tr>
+    <tr>
+        <td height="26" class="bottomtd">
+            <a href='mailto:<?php echo $fields["email"]?>'><img src='guestbook/images/mail.gif' border=0 width='16' height='16' />[邮件]</a> &nbsp;
+            <a href='http://<?php echo $fields['homepage']?>' target='_blank'><img src='guestbook/images/home.gif' border=0 width='16' height='16' />[主页]</a> &nbsp;
+            <a href='guestbook.php?action=admin&id=<?php echo $fields['id']; ?>'><img src='guestbook/images/quote.gif' border=0 height=16 width=16 />[回复/编辑]</a> &nbsp;
+            <?php if($g_isadmin) { ?>
+            <a href='guestbook.php?action=admin&id=<?php echo $fields['id']; ?>&job=del'><img src='guestbook/images/del.gif' border=0 height=16 width=16 />[删除]</a>
+            <?php }  ?>
+        </td>
+    </tr>
+    </table>
+    <?php if($ntt==0){$ntt=1;}else{ $ntt=0; } ?>
+    {/dede:datalist}
+    <table border='0' cellpadding='0' cellspacing='0' width='100%' align='center' class='pagetable'>
+        <tr>
+            <td align="center" height='28'> {dede:pagelist listsize='5'/} </td>
+        </tr>
+    </table>
+</div>
+
+
+<?php
+pasterTempletDiy("new/footer.html");
+?>
+</div>
+<script src="/style/js/min/plugins.min.js"></script>
+<script src="/style/js/min/medigo-custom.min.js"></script>
+<script src="/style/js/jquery.validate.min.js"></script>
+<script src="/style/js/jquery.form.js"></script>
+<script src="/style/js/jquery.md5.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#commentform").validate({
+            submitHandler: function () {
+                var data = $("#commentform").formToArray();
+                $.ajax({
+                    type: "POST",
+                    url: "{:url('index/save')}",
+                    data: data,
+                    dataType: 'json',
+                    success: function (msg) {
+                        if (msg.status == "true") {
+                            alert(msg.message);
+                            location.reload();
+                        } else {
+                            alert(msg.message);
+                        }
+                    }
+                });
+            }
+        });
+    });
+</script>

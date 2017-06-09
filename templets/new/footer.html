@@ -1,0 +1,27 @@
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="footer-nav clearfix">
+                    <ul class="footer-menu">
+                        <li><a href='{dede:global.cfg_cmsurl/}/'><span>首页</span></a></li>
+                        {dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+                        <li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
+                        {/dede:channel}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright-text">
+                    {dede:global.cfg_powerby/}
+                </p>
+                <p class="copyright-text">
+                    {dede:global.cfg_beian/}
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

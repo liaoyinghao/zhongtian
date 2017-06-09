@@ -1,0 +1,21 @@
+<?php
+$z[0]=Array("include","",1293,1328);
+$z[0][4]=array();
+$z[0][4]['filename']="head.htm";
+$z[1]=Array("sql","\r\n		 <a href=\"[field:description/]\" target=\"_blank\">\r\n		 <div class=\"[field:typename/] default-portfolio-item\" style=\" width:305px; height:220px;  float:left; margin:15px 15px;\">\r\n	                    <div class=\"inner-box\">\r\n	                        <figure class=\"image\"><img src=\"[field:litpic/]\" alt=\"[field:shorttitle/]\" height=\"220\" ></figure>\r\n	                        <div class=\"overlay-box\">\r\n	                        	<div class=\"content-box\">\r\n	                                <div class=\"content\">\r\n	                                	<h2 style=\" font-size:18px; color:white;\">[field:title/]</h2>\r\n	                                </div>\r\n	                            </div>\r\n	                            <span class=\"line-left\"></span><span class=\"line-bottom\"></span><span class=\"line-right\"></span><span class=\"line-top\"></span>\r\n	                        </div>\r\n	                    </div>\r\n	                </div>\r\n		 </a>\r\n	 ",7185,8268);
+$z[1][4]=array();
+$z[1][4]['sql']="Select id,title,shorttitle,litpic,description from dede_archives where typeid=14 order by senddate desc limit 0,8";
+$z[2]=Array("sql","\r\n					<div class=\"default-portfolio-item mix mix_all portfolio col-lg-3 col-md-4 col-sm-6 col-xs-12 [field:typename/]\">\r\n	                    <div class=\"inner-box\">\r\n	                        <figure class=\"image\"><img src=\"[field:litpic/]\" alt=\"[field:fulltitle/]\" height=\"290\" ></figure>\r\n	                        <div class=\"overlay-box\">\r\n	                        	<div class=\"content-box\">\r\n	                                <div class=\"content\">\r\n	                                	<h2 style=\" font-size:18px;\"><a href=\"[field:keywords/]\">[field:title/]</a></h2>\r\n	                                </div>\r\n	                            </div>\r\n	                            <span class=\"line-left\"></span><span class=\"line-bottom\"></span><span class=\"line-right\"></span><span class=\"line-top\"></span>\r\n	                        </div>\r\n	                    </div>\r\n	                </div>\r\n	 ",8408,9406);
+$z[2][4]=array();
+$z[2][4]['sql']="Select id,title,shorttitle,litpic,keywords from dede_archives where typeid=16";
+$z[3]=Array("sql","\r\n		<article style=\" width:200px; height:170px; border:2px dashed #5BBEE9; float:left; margin-left:10px;\">\r\n                                	<div style=\" width:180px; height:150px; font-size:24px;  line-height:150px; text-align: center;\">[field:typename/]</div>\r\n                            	</article>\r\n		",10909,11291);
+$z[3][4]=array();
+$z[3][4]['sql']="Select typename from dede_arctype where topid=22";
+$z[4]=Array("sql","\r\n					<div class=\"pricing-table col-md-3 col-sm-6 col-xs-12\">\r\n	                	<div class=\"inner-box wow fadeIn\" data-wow-delay=\"900ms\" data-wow-duration=\"1500ms\">\r\n	                    	<div class=\"table-header\">\r\n	                    		<h3 class=\"price\">[field:title/]</h3>\r\n	                            <div class=\"icon-right\"><span class=\"flaticon-medal\"></span></div>\r\n	                        </div>\r\n	                        \r\n	                        <div style=\" width:270px; height:180px;\">\r\n	                        	<img src=\"[field:litpic/]\" style=\" width:250px; height:160px; margin-left:9px; margin-top:10px;\">\r\n	                        </div>\r\n	                        <div class=\"table-footer\" style=\" height:180px; \">\r\n	                        	[field:description/]\r\n	                        </div>\r\n	                        \r\n	                    </div>\r\n	                </div>\r\n		",11958,12957);
+$z[4][4]=array();
+$z[4][4]['sql']="Select title,litpic,description from dede_archives where typeid2=17";
+$z[5]=Array("include","",13050,13087);
+$z[5][4]=array();
+$z[5][4]['filename']="footer.htm";
+
+?>
