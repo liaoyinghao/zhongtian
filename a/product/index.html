@@ -20,6 +20,16 @@
 <style>
 	.imgs{max-width: 100%;min-width:50%;max-height:50%;min-height:50%}
 	.huodong>div{margin-top:30px;}
+	.hdtu>img{width: 200px;height: 200px;display:block;margin: 0 auto;}
+	.hdzt{text-align: center;font-size: 18px;}
+	#box{width: 1201px;height: 500px;margin: 0 auto;position: relative;overflow: hidden;}
+	.ul1{width: 2680px;height: 500px;position: absolute;left: -339px;top: 0;}
+	.ul1>li{width:300px;height:500px;float: left;border:1px solid #ccc;border-left: none;list-style-type: none;padding: 5px;overflow: auto;}
+	.ul1>li::-webkit-scrollbar{width:0px}
+	
+	.hei{width: 50px;height: 81px;background: url(/style/img/b2.png);position: absolute;left: 0;top: 150px;opacity: 0.5;}
+	.bai{width: 50px;height: 81px;background: url(/style/img/b1.png);position: absolute;right: 0;top: 150px;opacity: 0.5;}
+	
 </style>
 </head>
 <body>
@@ -27,9 +37,7 @@
 <div class="responsive_menu">
     <ul class="main_menu">
         <li><a href='/'><span>主页</span></a></li>
-        <li class='hover'><a href='/a/product/' ><span>参与活动</span></a></li>
-        <li><a href='/a/download/' ><span>下载APP</span></a></li>
-        
+        <li class='hover'><a href='/a/product/' ><span>活动中心</span></a></li>
         <li><a href='/a/about/' ><span>关于我们</span></a></li>
         
         <li><a href='/a/contact/' ><span>联系我们</span></a></li>
@@ -55,9 +63,7 @@
                     <nav class="main-nav visible-md visible-lg">
                         <ul class="sf-menu">
                             <li><a href='/'><span>主页</span></a></li>
-                            <li class='hover'><a href='/a/product/' ><span>参与活动</span></a></li>
-                            <li><a href='/a/download/' ><span>下载APP</span></a></li>
-                            
+                            <li class='hover'><a href='/a/product/' ><span>活动中心</span></a></li>
                             <li><a href='/a/about/' ><span>关于我们</span></a></li>
                             
                             <li><a href='/a/contact/' ><span>联系我们</span></a></li>
@@ -77,183 +83,229 @@
 
 <!--header * 结束 -->
 
-
+	
 <p style="width: 100%;height: 90px;" class="zhanwei"></p>
-<img src="/style/img/banner2.jpg" style="width: 100%;"/>
+	<img src="/style/img/banner2.jpg" style="width: 100%;"/>
 
-<section class="light-content our-team">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-header">
-					<h2 class="section-title">活动参与</h2>
-				</div> <!-- /.section-header -->
-			</div> <!-- /.col-md-12 -->
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
-	<div class="team-members">
+	<section class="light-content our-team">
 		<div class="container">
 			<div class="row">
-
-				<div class="col-md-3 col-sm-3">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/img1.png" alt="">
-						</div>
-						<div class="member-content">
-							<h4 class="member-name">奥森公园亲子茶会</h4>
-							<p>禅修茶道”，集禅修、茶道、音乐、养生为一体，将泡茶的十二道工序，变成十二种修行。将感恩、包容、分享、结缘，以及品茶参禅、品茶品心、圆融融合，禅茶一味。</p>
-						</div>
-					</div> <!-- /.team-member -->
-				</div> <!-- /.col-md-4 -->
-
-				<div class="col-md-3 col-sm-3">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/img2.png" alt="">
-						</div>
-						<div class="member-content">
-							<h4 class="member-name">少年儿童书画公益巡展</h4>
-							<p>中天鼎璨文化传播有限公司代表、玉泉区宣传部副部长范明强，玉泉区教育局局长陈长青，玉泉区团委书记白云，玉泉区教育局副局长杨瑞清，等领导和嘉宾出席开幕式，并为学生和优秀辅导员颁奖。</p>
-						</div>
-					</div> <!-- /.team-member -->
-				</div> <!-- /.col-md-4 -->
-				<div class="col-md-3 col-sm-3">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/img3.png" alt="">
-						</div>
-						<div class="member-content">
-							<h4 class="member-name">为领导敬献红领巾</h4>
-							<p>中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品公益巡展暨全盟青少年庆祝内蒙古自治区成立70周年书画展 </p>
-						</div>
-					</div> <!-- /.team-member -->
-				</div> <!-- /.col-md-4 -->
-
-				<div class="col-md-3 col-sm-3">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/img4.png" alt="王羲之书法奖">
-						</div>
-						<div class="member-content">
-							<h4 class="member-name">王羲之书法奖</h4>
-							<p>9月3日，适逢书圣王羲之诞辰1713周年纪念日，第二届王羲之奖书法作品展开幕式在山东美术馆举行。展览共展出书法及篆刻作品260余件。</p>
-						</div>
-					</div> <!-- /.team-member -->
-				</div> <!-- /.col-md-4 -->
-
+				<div class="col-md-12">
+					<div class="section-header">
+						<h2 class="section-title">参与的活动</h2>
+					</div> <!-- /.section-header -->
+				</div> <!-- /.col-md-12 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
-	</div> <!-- /.team-members -->
-</section> <!-- /.our-team -->
+		<div class="team-members">
+			<div class="container">
+				<div class="row">
+				
+					<div id="box">
+						<ul class="ul1">
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan1.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">第三站| 中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品巡展暨庆祝自治区成立70周年，喜迎党十九大胜利召开活动在乌兰察布举行</h4>
+									<p>为深入学习贯彻习近平总书记系列重要讲话精神，传承中华民族优秀传统文化。5月13日，由中国少先队事业发展中心主办、中天鼎璨文化传播有限公司和共青团乌兰察布市委员会承办的“中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品公益巡展”暨“红领巾心向党”—庆祝自治区成立70周年，喜迎党的十九大胜利召开主题活动在内蒙古乌兰察布市博物馆隆重举行。</p>
+								</div>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan2.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品公益巡展暨玉泉区中小学庆祝内蒙古自治区成立70周年书画展在玉泉区举行</h4>
+									<p>5月10日，由中国少先队事业发展中心主办，中天鼎璨文化传播有限公司和玉泉区教育局承办的“中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品公益巡展暨玉泉区中小学庆祝内蒙古自治区成立70周年书画展”在玉泉区大漠文化创意园举行。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan3.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">中天鼎璨·第四届全国少先队辅导员及少年儿童书画展暨全盟青少年庆祝内蒙古自治区成立70周年书画展在兴安盟隆重举行</h4>
+									<p>为深入学习贯彻习近平总书记系列重要讲话精神，发挥少先队辅导员的示范作用, 传承中华民族优秀传统文化，庆祝内蒙古自治区成立七十周年。5月6日，由中国少先队事业发展中心主办、中国少先队事业发展中心辅导员服务中心、中天鼎璨文化传播有限公司和共青团兴安盟委员会承办的“中天鼎璨·第四届全国少先队辅导员及少年儿童书画作品公益巡展暨全盟青少年庆祝内蒙古自治区成立70周年书画展”在内蒙古兴安盟体育馆隆重举行。中国青少年宫协会副会长、副秘书长朱迎，兴安盟人大副主任汤爱茹，兴安盟行署副盟长刘剑夕，兴安盟政协副主席杜吉雅，中国少先队事业发展中心辅导员服务中心主任张玉勋，中天鼎璨文化传播有限公司代表任钦功等领导和嘉宾出席了活动。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan4.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">第三届山东省青年美术大展新闻发布会在济南举办</h4>
+									<p>由山东省文学艺术界联合会主办，山东省美术家协会、山东美术馆、中天鼎璨文化传播有限公司承办,山东省现代艺术研究院、山东省青年美术家协会、济南市青年美术家协会、山东新闻书画院协办的第三届山东省青年美术大展新闻发布会于4月18日下午在东方大厦成功举办。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan5.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">第四届全国辅导员暨少年儿童书画展儿童组书法一类作品展示</h4>
+									<p>“中天鼎璨･第四届全国少先队辅导员暨少年儿童书画作品征集展示活动”已于3月初完成所有评审工作。经过严格的评审，共选出儿童绘画一类、儿童书法一类、成人绘画一类、成人书法一类各50幅。儿童绘画二类、儿童书法二类各100幅，成人绘画二类45幅，成人书法二类78幅。儿童绘画三类，儿童书法三类各300幅， 成人书法三类70幅。儿童绘画优秀2988幅，儿童书法优秀707幅。儿童绘画小达人1000幅，儿童书法小达人350幅。获奖人员名单已于中国少先队事业发展中心官网及群贤艺术网（www.qunxianart.com）同时发布。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan6.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">第四届全国辅导员暨少年儿童书画展儿童组绘画一类作品展示</h4>
+									<p>“中天鼎璨･第四届全国少先队辅导员暨少年儿童书画作品征集展示活动”已于3月初完成所有评审工作。经过严格的评审，共选出儿童绘画一类、儿童书法一类、成人绘画一类、成人书法一类各50幅。儿童绘画二类、儿童书法二类各100幅，成人绘画二类45幅，成人书法二类78幅。儿童绘画三类，儿童书法三类各300幅， 成人书法三类70幅。儿童绘画优秀2988幅，儿童书法优秀707幅。儿童绘画小达人1000幅，儿童书法小达人350幅。获奖人员名单已于中少事业发展中心官网及群贤艺术网（www.qunxianart.com）同时发布。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan7.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">第四届全国辅导员暨少年儿童书画展教师组一类作品展示</h4>
+									<p>“中天鼎璨･第四届全国少先队辅导员暨少年儿童书画作品征集展示活动”已于3月初完成所有评审工作。经过严格的评审，共选出儿童绘画一类、儿童书法一类、成人绘画一类、成人书法一类各50幅。儿童绘画二类、儿童书法二类各100幅，成人绘画二类45幅，成人书法二类78幅。儿童绘画三类，儿童书法三类各300幅， 成人书法三类70幅。儿童绘画优秀2988幅，儿童书法优秀707幅。儿童绘画小达人1000幅，儿童书法小达人350幅。获奖人员名单已于中少事业发展中心官网及群贤艺术网（www.qunxianart.com）同时发布。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan8.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">中天鼎璨·第四届全国少先队辅导员暨少年儿童书画作品展示活动总结</h4>
+									<p>2月16日，中少事业辅导员服务中心张主任带领一行专家评委前往位于北京通州的评选场地——六艺讲堂进行活动经验总结。张主任首先肯定了此次活动的规模性与专业性，她表示此次活动不论从规模上还是从作品质量上都远超上一届。同时，张主任就即将进行的终评做出指示，要求一定要规范评审条例，严格评选。组委会秘书长任钦功对两次评选进行了总结，他表示，本次展览活动收到的画作，无论从自己的"小家"还是到祖国的"大家"，从森林环境保护还是到水资源的节约，无不生动，贴切的反映了“我爱我家”的绘画主题。尤为特别是有的小同学用天马行空的想像，在海底开拓生活家园，在太空建设基地等等，另辟蹊径得表达自己心目中的“美好家园”。书法作品同样精彩，从描述家园的古诗到爱岗敬业的短语，既写的端庄大方，又极好地贴合了活动主题。随后，任秘书长带领专家组成员重新审查了获奖作品。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan9.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">中天鼎璨·第四届全国少先队辅导员暨少年儿童书画作品初评</h4>
+									<p>为深入学习贯彻习近平总书记系列重要讲话精神，发挥少先队辅导员的示范作用，利用艺术的形式，生动传播爱国主义精神，引导广大少年儿童“从小学习做人，从小学习立志，从小学习创造”，培育和践行社会主义核心价值观，为实现中华民族伟大复兴的中国梦做好全面准备，中国少先队事业发展中心联合相关机构，开展“我爱我家——中天鼎璨·第四届全国少先队辅导员暨少年儿童书画作品征集展示活动”。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan10.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">2017年博山正觉寺“大美正觉——第二届全国书画展”正式开幕</h4>
+									<p>2017年1月1日上午10：00，山东省博山正觉寺书画院“大美正觉——第二届全国书画展”开幕，翰墨书香，欢声笑语，共同迎接2017年的到来。书画展开幕式由常务副院长任钦功先生主持，出席开幕式的嘉宾有：博山正觉寺书画院院长傅春林先生；淄博市民宗局于精忠老局长；博山区委常委、统战部王冲部长；博山区民宗局于忠才局长；博山区文化出版局刘莲静局长；博山区民宗局孙忠副局长。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan11.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">百幅书画告诉你 农历二十四节气里发生的那些事儿</h4>
+									<p>　近日，中国“二十四节气”正式列入联合国教科文组织人类非物质文化遗产代表作名录。作为中国人特有的时间知识体系，被誉为“中国的第五大发明”的“二十四节气”深刻影响着人们的思维方式和行为准则。虽然对于很多现代人，尤其是很多年轻人来说，认为这是标准的“老黄历”了，但在中国广大农村地区，很多居民可能不知道一些现代节日，对于“二十四节气”却耳熟能详，并且仍旧根据它们在指导和安排自己的生产、生活。</p>
+								</div>
+							</li>
+							<li>
+								<div class="thumb-post hdtu"><img src="/style/img/zhan12.png"></div>
+								<div class="member-content">
+									<h4 class="member-name hdzt">初雪瑞兆京城，禅茶芳泽忠德</h4>
+									<p>11月22日，初雪过后的京师银纱素裹，虽寒风凛冽，但也带走了久积于此的浓浓雾霾，天空明亮，心情也随之欢畅了起来。身着传统服饰的茶道师们携带茶具陆续进入忠德学校。午饭过后，三十多名同学在班主任郝老师的带领下来到学校的多功能厅搬桌挪椅、打水摆盘，一时间热闹无比。原来啊！是北京禅茶心苑的亲子茶会活动首次走入校园，将要给忠德学校四年级的小同学以及老师和学生家长们带来一场意义非凡的传统国学课程。</p>
+								</div>
+							</li>
+						</ul>
+						<div class="hei"></div>
+						<div class="bai"></div>
+					</div>
 
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.team-members -->
+	</section> <!-- /.our-team -->
+	
 
-<section class="light-content our-team">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-header">
-					<h2 class="section-title">活动图片</h2>
-					<!-- <p class="section-desc">Medigo is the automated way to keep track of what everyone is working on.</p> -->
-				</div> <!-- /.section-header -->
-			</div> <!-- /.col-md-12 -->
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
-	<div class="team-members">
+	<section class="light-content our-team">
 		<div class="container">
-			<div class="row huodong">
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong.png" alt="">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header">
+						<h2 class="section-title">活动精选图片</h2>
+						<!-- <p class="section-desc">Medigo is the automated way to keep track of what everyone is working on.</p> -->
+					</div> <!-- /.section-header -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+		<div class="team-members">
+			<div class="container">
+				<div class="row huodong">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong1.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong1.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong2.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong2.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong3.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong3.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong4.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong4.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong5.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong5.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong6.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong6.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong7.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong7.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong8.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong8.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong9.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong9.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong10.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong10.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6">
-					<div class="team-member">
-						<div class="thumb-post">
-							<img src="/style/img/huodong11.png" alt="">
+					<div class="col-md-3 col-sm-4 col-xs-6">
+						<div class="team-member">
+							<div class="thumb-post">
+								<img src="/style/img/huodong11.png" alt="">
+							</div>
 						</div>
 					</div>
-				</div>
 
-			</div>
-		</div>
-	</div>
-</section>
-
-<br />
-<br />
+							</div> 
+						</div> 
+					</div>
+				</div> 
+			</div> 
+		</div> 
+	</section>
+	
+	<br />
+	<br />
 
 <!-- -footer 开始-->
 
@@ -264,9 +316,7 @@
                 <nav class="footer-nav clearfix">
                     <ul class="footer-menu">
                         <li><a href='/'><span>首页</span></a></li>
-                        <li class='hover'><a href='/a/product/' ><span>参与活动</span></a></li>
-                        <li><a href='/a/download/' ><span>下载APP</span></a></li>
-                        
+                        <li class='hover'><a href='/a/product/' ><span>活动中心</span></a></li>
                         <li><a href='/a/about/' ><span>关于我们</span></a></li>
                         
                         <li><a href='/a/contact/' ><span>联系我们</span></a></li>
@@ -278,10 +328,10 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="copyright-text">
-                    COPYRIGHT © SHANGHAI JINYUANBAO TECHNOLOGY CO,LTD.     中天鼎璨科技有限公司
+                    COPYRIGHT © SHANGHAI JINYUANBAO TECHNOLOGY CO,LTD。中天鼎璨文化传播有限公司
                 </p>
                 <p class="copyright-text">
-                    沪ICP备 00000000号    联系电话：400-000-8888
+                    联系电话：13062815622
                 </p>
             </div>
         </div>
@@ -295,5 +345,23 @@
 	<script src="/style/js/jquery.validate.min.js"></script>
 	<script src="/style/js/jquery.form.js"></script>
 	<script src="/style/js/jquery.md5.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		
+		$(".bai").click(function(){
+			$($(".ul1 li")[0]).appendTo(".ul1");
+			$(".ul1").css("left",-50);
+			$(".ul1").stop().animate({"left":"-339"},500)
+		})
+		
+		$(".hei").click(function(){
+			var chang = $(".ul1 li").length-1;
+			$($(".ul1 li")[chang]).prependTo(".ul1");
+			$(".ul1").css("left",-630);
+			$(".ul1").stop().animate({"left":-339},500)
+		})
+
+})
+</script>
 </body>
 </html>
